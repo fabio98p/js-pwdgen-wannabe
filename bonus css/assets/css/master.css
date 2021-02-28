@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: lightgrey;
+}
+header{
+	background-color: lightsteelblue;
+}
+header h1{
+	margin: 0;
+	padding: 2rem;
+	font-size: 60px;
+}
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	height: calc(100vh - 135px - 45px);
+}
+main .card{
+	background-color: lightyellow;
+	width: 50%;
+	height: 600px;
+	border-radius: 25px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+main .card > *{
+	font-size: 60px;
+	margin: 20px;
+}
+main .card .bluebox{
+	background-color: aquamarine;
+	padding: 0 10px;
+	border-radius: 10px;
+}
+main #newPassword{
+	-webkit-text-security: disc;
+}
+main .bluebox:hover #newPassword{
+	-webkit-text-security: none;
+}
+footer{
+	background-color: cornflowerblue;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 100%;
+}
